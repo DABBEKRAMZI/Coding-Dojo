@@ -1,0 +1,35 @@
+.S {
+    background-color:white;
+    border: 2px rgb(99, 186, 154) solid;
+    font-size: 20px;
+    color: rgb(99, 186, 154);
+    border-radius: 20px;
+    width: 150px;
+    margin-top: 30px;
+    text-align: center;
+}
+strong {
+    margin: 0px 0px 0px 0px;
+}
+.plus {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(99, 186, 154) ;
+    color: white;
+    font-size: 30px;
+    border: 2px rgb(99, 186, 154) solid;
+    padding: auto ;
+}
+.Create {
+    background-color: blue;
+    color: white;
+    border: 2px black solid;
+    box-shadow: 5px 5px black;
+    width: 150px;
+    height: 30px;
+}
+*{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
