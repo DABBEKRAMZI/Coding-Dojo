@@ -1,0 +1,41 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.nav-title {
+    color: white;
+}
+.nav-links {
+    display: flex;
+    align-items: center; 
+    list-style-type: none;
+}
+li {
+    margin-left: 30px;
+    color: #F6F6F6;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.btn{
+    background-color:#17A2B8;
+    color: #fff;
+    box-shadow: 3px 3px black;
+    border-color: black;
+    
+}
+.active {
+    font-weight: bold;
+    color: #EEEEEE;
+}
