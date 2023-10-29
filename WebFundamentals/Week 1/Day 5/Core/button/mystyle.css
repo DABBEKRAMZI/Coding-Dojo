@@ -1,0 +1,97 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+nav {
+    background-color:grey; 
+    width:60%;
+    height: 70px;
+    margin:auto ;
+    display : flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+nav > button {
+    background-color: blue;
+    color:white;
+    width: 90px;
+    height: 30px;
+    box-shadow: 2px 5px black;
+}
+#s {
+    width: 400px;
+    height: 30px;
+    border: 2px black solid;
+    padding-left: 5px;
+}
+.main {
+    width: 60% ;
+    margin:auto ;
+    display : flex ;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
+}
+.ninja {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+    margin-left: -50px;
+    margin-right: 50px;
+
+}
+.ninja1 {
+    display: flex;
+    align-items: center;
+    border: 2px black solid;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+.def {
+    
+    padding: 20px ;
+    margin-right: -50px;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px black solid;
+}
+.ninja1 >h4 {
+    padding: 10px;
+}
+.def button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* height: 30px; */
+    border: 2px black solid;
+    background-color: rgb(107, 192, 107);
+    box-shadow: 2px 2px black;
+    padding: 10px;
+}
+.left {
+    margin-right: 10px;
+    width: 30%;
+}
+.left >* {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.left button {
+    background-color: yellow;
+    width:100px ;
+    height: 30px;
+    box-shadow: 2px 2px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
