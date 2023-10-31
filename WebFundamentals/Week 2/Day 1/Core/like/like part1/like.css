@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.totale {
+    width : 30% ;
+    height: 100px;
+    margin: 50px auto;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rigth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.rigth >button {
+    padding: 3px 7px;
+    background-color: yellow;
+    box-shadow: 2px 2px ;
+}
