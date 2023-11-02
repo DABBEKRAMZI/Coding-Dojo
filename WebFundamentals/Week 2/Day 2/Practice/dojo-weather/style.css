@@ -11,7 +11,7 @@
     background-color: #9FC5F8;
 }
 nav {
-    width: 60%;
+    width: 80%;
     height: 70px;
     margin: 0 auto;
     display: flex;
@@ -21,21 +21,23 @@ nav {
     font-size: 150%;
 }
 .links {
+    width: 60%;
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-evenly;
     margin-right: 10px;
 }
 .links >li {
     list-style-type: none;
 }
 .main {
-    width: 60%;
+    width: 80%;
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
     border-bottom: 2px solid black;
+    font-size: 150%;
 }
 .sel {
     display: flex;
@@ -44,7 +46,7 @@ nav {
 }
 
 .mainmain {
-    width: 60%;
+    width: 80%;
     margin: 10px auto;
     display: flex;
     align-items: center;
@@ -55,16 +57,16 @@ nav {
     width: 22%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 12%;
     align-items: center;
     background-color: #EEEEEE;
-
-    height: 300px;
+    height: 600px;
 
 }
 .weath img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    /* height: 200px; */
     border-radius: 50%;
 }
 .red {
@@ -73,10 +75,14 @@ nav {
 .blue {
     color: blue;
 }
+.weath > h2,h5 {
+    font-size: 150%;
+}
 .temp {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 80px;
+    justify-content: space-around;
     margin-bottom: 10px;
 
 }
@@ -84,7 +90,7 @@ nav {
     margin-top: 10px;
 }
 .coockies {
-    width: 60%;
+    width: 80%;
     margin: 10px auto;
     background-color: #EEEEEE;
     display: flex;
