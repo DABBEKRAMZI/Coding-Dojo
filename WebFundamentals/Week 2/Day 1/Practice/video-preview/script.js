@@ -1,5 +1,6 @@
 function playfunc(element)
-{   element.muted = true;
+{ 
+    //   element.muted = true;
     element.play();
     console.log("on");
    

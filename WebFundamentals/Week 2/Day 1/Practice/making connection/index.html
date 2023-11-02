@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="droit">
+            <h1>Profile</h1>
+            <ul class="list">
+                <li>Home</li>
+                <li id="active">My Profile</li>
+                <li>Find Connections</li>
+            </ul>
+        </div>
+        <button class="btn">Sign Out</button>
+    </nav>
+    <div class="main">
+        <div class="maindroit">
+            <div class="profile">
+                <div class="bar">
+
+                </div>
+
+                <div class="test">
+
+                    <div class="image">
+                        <img id="im" src="images icones/images/ramzi.jpg" alt="">
+                        <!-- <div class="cercleblac"></div> -->
+                        <h1 id="name">Ramzi DABBEK</h1>
+                    </div>
+                    <div class="localisation">
+                        <img src="images icones/icons/map-marker.png" alt="">
+                        <h3><strong>Golaa-Douz Kibelli</strong></h3>
+
+                    </div>
+                    <div class="discription">
+                        <h4>Developer|Engineer|Problem Solver</h4>
+                        <h4>Trainer in the robotic field Beginner-Level </h4>
+
+                    </div>
+                    <div class="edit">
+                        <img src="images icones/icons/gear.png" alt="">
+                        <a href="#" onclick="modifname()">edit profile </a>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <nav class="edu">
+                    
+                    <h4>Education</h4>
+                </nav>
+                <div class="cation">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p>Oct 2023 - Fev 2024 </p>
+                    <h3>Mechatronix Engineering</h3>
+                    <p> Sep 2017 - Oct 2021 </p>
+                    <h3>PREPA MP </h3>
+                    <p> Sep 2014 - June 2017</p>
+                    <h3>Bac Math </h3>
+                    <p> June 2013</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="maingauche">
+            <div class="request">
+                <nav>
+                    <div class="cercle"><p id="numberrequest">2</p></div>
+                    <h4>Connection Rquests</h4>
+                </nav>
+                <div class="listrequest">
+                    <div class="a aa">
+                        <div class="img">
+                            <img src="images icones/images/todd-s.jpg" alt="">
+                            <h4>Todd E</h4>
+                        </div>
+                        <div class="reponse">
+                            <img src="images icones/icons/accept-circle.png" alt="" onclick="accept('.aa')">
+                            <img src="images icones/icons/close-circle.png" alt="" onclick="refuse('.aa')">
+                        </div>
+                    </div>
+                    <div class="a ab">
+                        <div class="img">
+                            <img src="images icones/images/phil-s.jpg" alt="">
+                            <h4>Phil K</h4>
+                        </div>
+                        <div class="reponse">
+                            <img src="images icones/icons/accept-circle.png" alt="" onclick="accept('.ab')">
+                            <img src="images icones/icons/close-circle.png" alt="" onclick="refuse('.ab')">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="connections">
+                <nav>
+                    <div class="b"><p><span id="numberconnection">500</span>+</p></div>
+                    <h4>Your Connections</h4>
+                </nav>
+                <div class="persone">
+                    <div class="img">
+                        <img src="images icones/images/adrien-s.jpg" alt="">
+                        <h4>Adrien D</h4>
+                    </div>
+                    <div class="img">
+                        <img src="images icones/images/anne-s.jpg" alt="">
+                        <h4>Anne J</h4>
+                    </div>
+                    <div class="img">
+                        <img src="images icones/images/alayne-s.jpg" alt="">
+                        <h4>Alayne T</h4>
+                    </div> 
+                    <div class="img">
+                        <img src="images icones/images/arry-s.jpg" alt="">
+                        <h4>Arry Y</h4>
+                    </div>
+
+                </div>
+                <div class="more">
+                    <a href="#">View More</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
