@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="haut">
+        <nav>
+          <h1>DojoWeather</h1>
+          <ul class="links">
+            <li onclick="alert('Loading weather report...')">Burbank</li>
+            <li onclick="alert('Loading weather report...')">Chivago</li>
+            <li onclick="alert('Loading weather report...')">Dallas</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <h1>San Jose</h1>
+        <div class="sel">
+          <h3>show temperature in</h3>
+          <select name="temp" id="temp" onchange="changetemp('.red','.blue',this)">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+          </select>
+        </div>
+      </div>
+      <div class="mainmain">
+        <div class="weath">
+            <h2>Today</h2>
+            <img src="assets/some_rain.png" alt="rain">
+            <h5>some rain</h5>
+            <div class="temp">
+                <h2 class="red red1">24°</h2>
+                <h2 class=" blue blue1">18°</h2>
+            </div>
+        </div>
+        <div class="weath">
+            <h2>Tomorrow</h2>
+            <img src="assets/some_sun.png" alt="rain">
+            <h5>some rain</h5>
+            <div class="temp">
+                <h2 class="red red2">27°</h2>
+                <h2 class="blue blue2">19°</h2>
+            </div>
+        </div>
+        <div class="weath">
+            <h2>Friday</h2>
+            <img src="assets/some_clouds.png" alt="rain">
+            <h5>some rain</h5>
+            <div class="temp">
+                <h2 class="red red3">21°</h2>
+                <h2 class="blue blue3">16°</h2>
+            </div>
+        </div>
+        <div class="weath">
+            <h2>Saturday</h2>
+            <img src="assets/some_sun.png" alt="rain">
+            <h5>some sun</h5>
+            <div class="temp">
+                <h2 class="red red4">26°</h2>
+                <h2 class="blue blue4">21°</h2>
+            </div>
+        </div>
+        
+      </div>
+      <div class="coockies" id="coockie">
+        <img src="assets/cookie.png" alt="">
+        <div class="center">
+            <h2>Stop! Cookie time</h2>
+            <p>we use cookies (sadly not the edible one) to personalize content and ads, to provide sicial media features and to analyse our traffic. <a href="#">Read more</a></p>
+        </div>
+        <button class="btn" onclick="removeCoocki('#coockie')">I Accept </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
