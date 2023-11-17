@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>flask serveur</title>
+</head>
+<body>
+    <h1>first template from flask server 😂😂😂</h1>
+    <h2>username {{user}} <br/>
+        userage {{number}}
+    </h2>
+    <table>
+
+    </table>
+    <hr>
+    {% for user in users %}
+        <p>{{user['name']}} ---- {{user['age']}}</p>
+    {% endfor %}
+    <hr>
+    {%for i in range(5)%}
+        <h4>{{i}}</h4>    
+        {% endfor %}
+
+    <hr>
+    <table class="table table-striped hover border border-secondary">
+        <tr>
+            <th>name</th>
+            <th> age</th>
+
+        </tr>
+        {%for user in users %}
+        <tr>
+            <td>{{user['name']}}</td>
+            <td>{{user['age']}}</td>
+        </tr>
+        {%endfor%}
+    </table>    
+</body>
+</html>
