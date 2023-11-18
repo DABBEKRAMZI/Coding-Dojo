@@ -7,11 +7,11 @@ def hi():
 
 @app.route('/play')
 def play():
-    return render_template("index.html",number=3)
+    return render_template("index.html",number=3,color="aqua")
 
 @app.route('/play/<int:number>')
 def play1(number):
-    return render_template("index.html", number=number)
+    return render_template("index.html", number=number ,color="aqua")
 
 @app.route('/play/<int:number>/<string:color>')
 def play2(number,color):
