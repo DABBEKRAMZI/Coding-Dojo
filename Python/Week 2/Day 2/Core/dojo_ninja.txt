@@ -1,0 +1,26 @@
+INSERT INTO dojos (name) VALUES ("alex"),("john"),("sam");
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM dojos ;
+select * FROM dojos;
+INSERT INTO dojos (name) VALUES ("alex"),("john"),("sam");
+INSERT INTO ninjas (dojo_id,first_name,last_name,age)
+ VALUES ((SELECT id FROM dojos ORDER BY id LIMIT 1),"aa","bb",2),
+ ((SELECT id FROM dojos ORDER BY id LIMIT 1),"cc","dd",4),
+ ((SELECT id FROM dojos ORDER BY id LIMIT 1),"ee","ff",6);
+ INSERT INTO ninjas (dojo_id,first_name,last_name,age)
+ VALUES ((SELECT id FROM dojos ORDER BY id LIMIT 1 offset 1),"a","b",1),
+ ((SELECT id FROM dojos ORDER BY id LIMIT 1 offset 1),"c","d",5),
+ ((SELECT id FROM dojos ORDER BY id LIMIT 1 offset 1),"e","f",3);
+ INSERT INTO ninjas (dojo_id,first_name,last_name,age)
+ VALUES ((SELECT id FROM dojos ORDER BY id DESC LIMIT 1),"aaa","bbb",7),
+ ((SELECT id FROM dojos ORDER BY id DESC LIMIT 1),"ccc","ddd",9),
+ ((SELECT id FROM dojos ORDER BY id DESC LIMIT 1),"eee","fff",10);
+ 
+ SELECT *FROM ninjas WHERE dojo_id=(SELECT id FROM dojos ORDER BY id LIMIT 1);
+ SELECT *FROM ninjas WHERE dojo_id=(SELECT id FROM dojos ORDER BY id DESC LIMIT 1);
+ 
+ SELECT *FROM dojos WHERE id =  (SELECT dojo_id FROM ninjas ORDER BY id  DESC LIMIT 1);
+
+ SELECT * FROM ninjas JOIN dojos ON dojos.id= ninjas.dojo_id where ninjas.id=6 ;
+ SELECT * FROM ninjas JOIN dojos ON dojos.id= ninjas.dojo_id
+ 
