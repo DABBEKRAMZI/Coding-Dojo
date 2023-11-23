@@ -9,7 +9,7 @@ app.secret_key="savasa"
 def hi():
     if 'number' not in session :
         session['number']=random.randint(1,100)    
-
+   
     return render_template("d.html")
 
    

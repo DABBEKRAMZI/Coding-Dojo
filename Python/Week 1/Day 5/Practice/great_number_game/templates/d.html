@@ -13,8 +13,9 @@
         <p>I am thinking of a number between 1 and 100 </p>
         {% if 'gues' in session %}
         {%if session['number']==session['gues']%}
-        <div style="background-color: green; width: 50%; height: 130px; display: flex;flex-direction: column; gap: 20px; align-items: center;">
+        <div style="background-color: green; width: 50%; height: 130px; display: flex;flex-direction: column;  align-items: center;">
             <h3> {{session['number']}} was the number </h3>
+            
             <button><a href="/reset">Play Again </a></button>
         </div>
         
