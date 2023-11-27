@@ -25,10 +25,13 @@ class User :
                 INSERT INTO users (First_name,Last_name,email)
                 VALUES (%(first_name)s,%(last_name)s,%(email)s)'''
         results=connectToMySQL("users").query_db(query,data)
+        return results
 
     @classmethod 
     def get_last_user (cls):
-        query='''SELECT *FROM users 
+        query='''
+
+            SELECT *FROM users 
             ORDER BY Id DESC
             LIMIT 1
                 '''
@@ -47,12 +50,12 @@ class User :
     def delete_by_id(cls,data):
         query='''DELETE FROM users WHERE Id=%(id)s
             '''
-        connectToMySQL("users").query_db(query,data)
+        return connectToMySQL("users").query_db(query,data)
 
     @classmethod
     def update(cls,data):
         query='''update users 
-                SET First_name=%(first_name)s,email=%(email)s,Last_name=%(lastst_name)s
+                SET First_name=%(first_name)s,email=%(email)s,Last_name=%(last_name)s
                 WHERE Id=%(id)s
                 '''
-        connectToMySQL("users").query_db(query,data)
+        return connectToMySQL("users").query_db(query,data)

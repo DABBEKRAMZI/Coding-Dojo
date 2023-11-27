@@ -4,7 +4,7 @@ from user_model import User
 app= Flask(__name__)
 
 
-@app.route('/')
+@app.route('/users')
 def all_users():
 
 
