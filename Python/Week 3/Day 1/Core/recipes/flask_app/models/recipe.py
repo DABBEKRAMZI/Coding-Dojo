@@ -14,7 +14,7 @@ class Recipe:
         self.under=data_dict['under']
         self.created_at=data_dict['created_at']
         self.updated_at=data_dict['updated_at']
-        self.poster=""
+       
 
 
 #    create a recipe
