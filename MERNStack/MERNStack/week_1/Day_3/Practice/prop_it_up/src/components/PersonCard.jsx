@@ -10,7 +10,7 @@ const PersonCard =(props)=>{
             <p>Age: {props.person.age}</p>
             <p>Hair color: {props.person.hair_color}</p>
 
-        </>
+        <>
     )
 }
 export default PersonCard
