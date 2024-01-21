@@ -8,7 +8,7 @@ const Buttons = ({buttons,setCurrent}) => {
 
   return (
     <div>
-        {buttons.map((button,idx) => <button key={idx} onClick={clickHandler(idx)}>{button}</button>)}
+        {buttons.map((button,idx) => <button key={idx} onClick={()=>clickHandler(idx)}>{button}</button>)}
     </div>
   )
 }
