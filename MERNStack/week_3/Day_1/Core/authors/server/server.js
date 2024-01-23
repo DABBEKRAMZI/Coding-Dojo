@@ -12,7 +12,7 @@ app.use(cors());
 require('./config/mongoose.config');
 
 //import routes
-// require('./routes/authors.routes')(app);
+require('./routes/authors.routes')(app);
 
 
 app.listen(process.env.port, () => console.log(`SERVER IS RUNNING ON PORT ${process.env.port}`))
